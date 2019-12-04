@@ -10,10 +10,12 @@ namespace csPrac
     {
         static void Main(string[] args)
         {
+            
+            //Person person = new Person();
+            //person.CalAge(1994, 2019);
 
-            /* this is the base, my step by step practices would be on branches 
-                every branch is a practices of a certain subject ;) */
-
+            int sum = Person.Add(4, 9);
+            Console.WriteLine(sum);
         }
     }
 }
