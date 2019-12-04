@@ -24,6 +24,11 @@ namespace csPrac
             //by holding ctrl+Rclick on datatypr you can see its primary declaration in .net class 
         
 
+            /*in general: 
+                camalCase is used for:   LocalVariables, Private Fields, Methodes Parameters
+                PascalCase is used for:  Consts, Public Fields, Class&Methode Name    */
+            
+            
         }
     }
 }
