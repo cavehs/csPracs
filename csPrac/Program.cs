@@ -19,22 +19,23 @@ namespace csPrac
 
 
         //we use enum to declare number of relative constants
-        //enum is internally an integer, we can change it by writing infront of it
-        //if we don't set values to enum members,by deafult it's gonna set 1st member 1 and increment it for each member
+        //enum is internally an integer, we can change it by writing certain datatype infront of it
+        //if we don't set values to enum members,by deafult it's gonna set 1st member zero and increments it for each member,it's recommended to be initialized with a value.
 
+        public enum shippingMethod: byte  //Enum can only be declared inside of a class, not method.
+        {
+            RegularAirMail = 1,
+            RegisterAirMail = 2,
+            Express = 3
+        };
 
         static void Main(string[] args)
         {
-            public enum shippingMethod
-            {
-            RegularAirMail = 1,
-            RegisterAirMail = 2,
-            Express = 3;
-            }
+            var method = shippingMethod.Express;
+           Console.WriteLine((int)method);
         }
 
-        var method = shippingMethod.Express;
-        Console.WriteLine((int)metohde);
+        
     }
 }
 
