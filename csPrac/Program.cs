@@ -29,7 +29,7 @@ namespace csPrac
             {
             RegularAirMail = 1,
             RegisterAirMail = 2,
-            Express = 3
+            Express = 3;
             }
         }
 
