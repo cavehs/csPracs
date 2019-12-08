@@ -11,9 +11,16 @@ namespace csPrac
         static void Main(string[] args)
         {
 
-            /* this is the base, my step by step practices would be on branches 
-                every branch is a practices of a certain subject ;) */
-
+            var numbersLst = new List<int>() {1,2,3,4,5};
+            numbersLst.Add(1);
+            numbersLst.AddRange(new int[3] {7,8,9});
+            numbersLst.IndexOf(1);//==> 0
+            numbersLst.LastIndexOf(1);//starting search from end ==> 5
+            Console.WriteLine(numbersLst.Count);
+            numbersLst.Remove(9);//removing an item from list, if it was 1 it'll remove first 1 found which is in zero index
+            numbersLst.Contains(5);//true
+            numbersLst.ForEach(Console.Write);
+            
         }
     }
 }
