@@ -30,6 +30,31 @@ namespace csPrac
             var path = "C:\\Users\\Administrator\\Documents"; 
             //in C# we should put 2slashes // for declaring path unless we put @ at first
             var path2 = @"C:\Users\Administrator\Documents";
+
+            //Working with Text:
+            var text = "Kaveh Raymond";
+            var textLower = text.ToLower();
+            var textUpper = text.ToUpper();             
+            int findA =text.IndexOf('a');//returns index of 1st a which is 1
+            int findLastA = text.LastIndexOf('a'); //returns a index from the end which is 7
+            Console.WriteLine(text.Substring(6,3));//returns string from given index length
+            Console.WriteLine(text.Replace(" ", "-"));
+            
+            //String Builder:
+            //Strings are immutable, if you're dealing a situation where you have a lot of string manipulation 
+            //Operations you can use a string builder, makes it easy to create a string and modify it on the flight
+            var builder = new StringBuilder();
+            builder.Append('-', 10);
+            builder.AppendLine();//Enter
+            builder.Append("  Header");
+            builder.AppendLine();
+            builder.Append('-', 10);
+            Console.WriteLine(builder);
+
+            builder.Replace('-', '*');
+            builder.Remove(0, 10);
+
+
         }
     }
 }
